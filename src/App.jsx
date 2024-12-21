@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import { AppRouter } from './rounter/AppRouter'
-
+import { UserProvider } from './providers/ UserProvider'
 
 function App() {
   return (
     <>
-      <AppRouter />
-      
+      <UserProvider>
+        <AppRouter />
+      </UserProvider>
     </>
   )
 }
